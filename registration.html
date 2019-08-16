@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<script src="registrationpage.js"></script>
+<link rel="stylesheet" href="registration.css" type="text/css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="body">
+		<div id="menu"></div>
+			<div id="content" align="center">
+				<form name="myForm" onsubmit="return validateMyForm()" method="post" action="registrationpage2.php">
+					<fieldset style="width:80%">
+						<legend>Registration Form</legend>
+						<label>Username:</label><input type="text" name="username"><br><br>
+						<label>Password:</label><input type="password" name="password"><br><br>
+						<label>Confirm Password:</label><input type="password" name="password1"><br><br>
+						<label>Email_id:</label><input type="text" name="email"><br><br>
+						<label>Phone_no:</label><input type="number" name="phone"><br><br>
+						<label>Street:</label><input type="text" name="street"><br><br>
+						<label>City:</label><input type="text" name="city"><br><br>
+						<label>Country:</label><input type="text" name="country"><br><br>
+						<input type="submit" name="register" value="Register">
+						<input type="button" onclick="location.href='index.html';" value="Go to Home" /></button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="registration.css" type="text/css">
+<title>Login Form</title>
+<script type="text/javascript">
+	function checklogin(){ 
+		if((login.username.value!="")&&(login.password.value!=""))
+	 {	 
+	  return true;
+	 }
+	 else if((login.username.value=="")||(login.password.value==""))
+	 {
+	  alert ("Field must be filled");
+	  return false;
+	 }
+	}
+</script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="body">
+		<div id="content" align="center">
+			<form name="login" action="checklogin.php" method="post" onSubmit="return checklogin()">
+			<fieldset style="width:80%">
+				<legend>SignIn</legend>
+				<label>Username: </label><input type="text"  name="username"  size="20" /><br><br>	
+				<label>Password: </label><input type="password"  name="password"  size="20" /><br><br>
+				<!--  <input type="checkbox" name="checkbox"><label>Remember Me</label><br><br>-->
+				<input type="submit"  name="submit"  value="Login" /><br><br>
+				<input type="button" onclick="location.href='index.html'" value="Home Page"><br><br>
+				<a href="registration.html">Register</a>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
